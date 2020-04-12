@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="58.0" prefWidth="694.0" style="-fx-background-color: #8F3A845E;">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" style="-fx-font: #0000;" text="งานทั้งหมด" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="468.0" layoutY="23.0" prefHeight="27.0" prefWidth="210.0" text="Label" />
+         </children>
+      </AnchorPane>
+      <TableView layoutY="58.0" prefHeight="389.0" prefWidth="694.0">
+        <columns>
+            <TableColumn prefWidth="138.4000244140625" text="วิศวกร" />
+          <TableColumn prefWidth="97.5999755859375" text="รหัสโครงการ" />
+          <TableColumn prefWidth="220.80006408691406" text="ชื่อโครงการ" />
+            <TableColumn minWidth="4.79998779296875" text="สถานะ" />
+            <TableColumn prefWidth="156.79998779296875" text="หน่วยงาน" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonBack" layoutX="544.0" layoutY="455.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="132.0" text="กลับไปหน้ารายชื่อ" />
+   </children>
+</AnchorPane>

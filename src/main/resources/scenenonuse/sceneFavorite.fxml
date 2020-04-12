@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="30.0" prefHeight="18.0" prefWidth="89.0" text="Favorite" />
+      <TableView layoutY="57.0" prefHeight="450.0" prefWidth="694.0">
+         <columns>
+            <TableColumn minWidth="0.0" prefWidth="89.07182478904724" text="Project ID" />
+            <TableColumn minWidth="0.0" prefWidth="102.82037353515625" text="Project Name" />
+            <TableColumn prefWidth="87.17970275878906" text="Responsibility" />
+            <TableColumn prefWidth="89.62579345703125" text="Start Date" />
+            <TableColumn prefWidth="97.99249267578125" text="Finish Date" />
+            <TableColumn prefWidth="94.54635620117188" text="Status" />
+            <TableColumn minWidth="0.0" prefWidth="129.0" text="Department" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

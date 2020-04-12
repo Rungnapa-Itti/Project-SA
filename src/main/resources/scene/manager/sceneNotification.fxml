@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Manager.SceneNotification">
+   <children>
+      <TableView fx:id="tableView" layoutY="59.0" onMouseClicked="#clickColumn" prefHeight="372.0" prefWidth="694.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="80.79998475313187" text="รหัสโครงการ" />
+            <TableColumn fx:id="name" prefWidth="152.55878448486328" text="ชื่อโครงการ" />
+            <TableColumn fx:id="nameEmployee" prefWidth="135.4412078857422" text="ผู้รับผิดชอบโครงการ" />
+            <TableColumn fx:id="dateStart" minWidth="0.0" prefWidth="101.84716796875" text="วันที่เริ่ม" />
+            <TableColumn fx:id="dateFinish" minWidth="4.79998779296875" prefWidth="106.94998168945312" text="วันที่จบ" />
+            <TableColumn fx:id="department" prefWidth="116.4088134765625" text="หน่วยงาน" />
+         </columns>
+      </TableView>
+      <AnchorPane prefHeight="58.0" prefWidth="694.0" style="-fx-background-color: #8F3A845E;">
+         <children>
+            <Label layoutX="21.0" layoutY="14.0" style="-fx-font: #0000;" text="การแจ้งเตือน" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelCount" alignment="CENTER_RIGHT" layoutX="486.0" layoutY="18.0" prefHeight="38.0" prefWidth="195.0" text="Label" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="buttonNext" layoutX="554.0" layoutY="455.0" mnemonicParsing="false" onAction="#handleNextOnClick" prefHeight="35.0" prefWidth="112.0" text="ตรวจสอบ" />
+   </children>
+</AnchorPane>

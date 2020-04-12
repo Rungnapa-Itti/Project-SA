@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.warningNotSelect">
+   <children>
+      <Label fx:id="labelMessage" alignment="CENTER" layoutX="85.0" layoutY="62.0" prefHeight="38.0" prefWidth="230.0" text="กรุณาเลือกรายการ" textFill="#ff0202">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonOk" layoutX="159.0" layoutY="138.0" mnemonicParsing="false" onAction="#handleOkOnClick" prefHeight="27.0" prefWidth="83.0" text="ตกลง" />
+   </children>
+</AnchorPane>

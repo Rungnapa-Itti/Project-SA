@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Manager.SceneListEmployee">
+   <children>
+      <AnchorPane prefHeight="58.0" prefWidth="704.0" style="-fx-background-color: #8F3A845E;">
+         <children>
+            <Label layoutX="21.0" layoutY="14.0" style="-fx-font: #0000;" text="รายชื่อวิศวกร" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="467.0" layoutY="15.0" prefHeight="37.0" prefWidth="216.0" text="Label" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableView" layoutY="57.0" onMouseClicked="#clickColoumn" prefHeight="396.0" prefWidth="693.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="77.59997254610062" text="รหัสประจำตัว" />
+            <TableColumn fx:id="name" minWidth="0.0" prefWidth="139.12705993652344" text="ชื่อ-นามสกุล" />
+            <TableColumn fx:id="email" prefWidth="83.8096923828125" text="อีเมลล์" />
+            <TableColumn fx:id="phone" prefWidth="125.72390747070312" text="เบอร์โทร" />
+            <TableColumn fx:id="position" prefWidth="108.23846435546875" text="ตำแหน่ง" />
+            <TableColumn fx:id="countProject" prefWidth="155.19036865234375" text="จำนวนงานที่รับผิดชอบ" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutX="427.0" layoutY="451.0" prefHeight="56.0" prefWidth="266.0">
+         <children>
+            <Button fx:id="labelCount" layoutX="143.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleCountProjectOnClick" prefHeight="35.0" prefWidth="112.0" text="ดูงานทั้งหมด" />
+            <Button fx:id="labelCount1" layoutX="25.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleSelectOnClick" prefHeight="35.0" prefWidth="112.0" text="เลือก" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="labelException" alignment="CENTER" layoutX="15.0" layoutY="460.0" prefHeight="37.0" prefWidth="429.0" text="Label" textFill="RED" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Manager.SceneMainManager">
+   <children>
+      <AnchorPane fx:id="anchorPane" layoutX="214.0" layoutY="-4.0" prefHeight="505.0" prefWidth="690.0" />
+      <AnchorPane layoutY="-3.0" prefHeight="506.0" prefWidth="199.0" style="-fx-background-color: E6E6FA;">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="1.0" prefHeight="505.0" prefWidth="48.0" style="-fx-background-color: #CCccFF;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="6.0" layoutY="199.0" onAction="#handleAssignmentOnClick" prefHeight="58.0" prefWidth="208.0" text="มอบหมายงาน">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/รายชื่อ.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="notification" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="5.0" layoutY="95.0" onAction="#handleNotificationOnClick" prefHeight="58.0" prefWidth="208.0" text="การแจ้งเตือน">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/แจ้งเตือน.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="listName" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="6.0" layoutY="250.0" onAction="#handleAllWorkOnClick" prefHeight="58.0" prefWidth="208.0" text="สถานะงาน">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/สถานะการทำงาน.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <Label fx:id="labelUser" layoutX="16.0" layoutY="14.0" prefHeight="52.0" prefWidth="178.0" />
+            <JFXButton fx:id="setting1" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="8.0" layoutY="417.0" onAction="#handleLogOutOnClick" prefHeight="58.0" prefWidth="208.0" text="ออกจากระบบ">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/ตั้งค่า.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="createWork1" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="8.0" layoutY="153.0" onAction="#handleCreateWorkOnClick" prefHeight="58.0" prefWidth="208.0" text="สร้างงาน">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/มอบหมายงาน.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="4.0" layoutY="297.0" onAction="#handleRegisterCustomer" prefHeight="58.0" prefWidth="208.0" text="ลงทะเบียนลูกค้าใหม่">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/สถานะการทำงาน.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

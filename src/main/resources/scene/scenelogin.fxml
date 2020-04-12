@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SceneLogin">
+   <children>
+      <Pane prefHeight="128.0" prefWidth="700.0" style="-fx-background-color: #8F3A845E;">
+         <children>
+            <Label layoutX="257.0" layoutY="33.0" prefHeight="77.0" prefWidth="205.0" text="LOGIN">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="128.0" prefHeight="378.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="labelException" alignment="CENTER" layoutX="172.0" layoutY="25.0" prefHeight="17.0" prefWidth="324.0" textFill="#ff1111" />
+            <Button fx:id="buttonlLogin" layoutX="285.0" layoutY="156.0" mnemonicParsing="false" onAction="#handleLoginButtonOnClick" prefHeight="44.0" prefWidth="95.0" text="Login" />
+            <TextField fx:id="textFieldPassword" layoutX="262.0" layoutY="95.0" prefHeight="29.0" prefWidth="235.0" promptText="your password" />
+            <Label alignment="BASELINE_RIGHT" layoutX="107.0" layoutY="95.0" prefHeight="29.0" prefWidth="130.0" scaleShape="false" text="Password" />
+            <Label alignment="BASELINE_RIGHT" layoutX="107.0" layoutY="51.0" prefHeight="29.0" prefWidth="130.0" scaleShape="false" text="Username" />
+            <TextField fx:id="textFieldUsername" layoutX="262.0" layoutY="51.0" prefHeight="29.0" prefWidth="235.0" promptText="your username" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

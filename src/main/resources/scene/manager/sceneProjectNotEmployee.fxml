@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Manager.SceneProjectNotEmployee">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="-1.0" prefHeight="90.0" prefWidth="698.0" style="-fx-background-color: #8F3A845E;">
+         <children>
+            <Label layoutX="31.0" layoutY="30.0" prefHeight="29.0" prefWidth="192.0" text="งานทั้งหมด">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="516.0" layoutY="42.0" prefHeight="38.0" prefWidth="174.0" text="Label" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableView" layoutY="89.0" onMouseClicked="#clickColumn" prefHeight="355.0" prefWidth="694.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="140.54502189159393" text="รหัสโครงการ" />
+          <TableColumn fx:id="name" minWidth="9.454948425292969" prefWidth="179.6761474609375" text="ชื่อโครงการ" />
+            <TableColumn fx:id="department" minWidth="0.0" prefWidth="208.3238525390625" text="หน่วยงาน" />
+            <TableColumn fx:id="status" minWidth="0.0" prefWidth="164.90310668945312" text="สถานะ" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="417.0" layoutY="443.0" prefHeight="61.0" prefWidth="276.0">
+         <children>
+            <Button fx:id="buttonProjectDetail" layoutX="140.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleDetialProjectOnClick" prefHeight="35.0" prefWidth="112.0" text="ดูรายละเอียดงาน" />
+            <Button fx:id="buttonSelected" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleSelectedProjectOnClick" prefHeight="35.0" prefWidth="112.0" text="เลือก" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="13.0" layoutY="457.0" prefHeight="38.0" prefWidth="410.0" text="Label" textFill="#ff0202" />
+   </children>
+</AnchorPane>

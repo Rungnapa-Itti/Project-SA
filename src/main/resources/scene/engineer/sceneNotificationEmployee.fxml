@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Engineer.SceneNotificationEmployee">
+   <children>
+      <TableView fx:id="tableView" layoutY="59.0" prefHeight="446.0" prefWidth="694.0">
+         <columns>
+            <TableColumn fx:id="idProject" prefWidth="80.79998475313187" text="รหัสโครงการ" />
+            <TableColumn fx:id="nameProject" prefWidth="138.39999389648438" text="ชื่อโครงการ" />
+            <TableColumn fx:id="startDate" minWidth="0.0" prefWidth="66.4000244140625" text="วันที่เริ่ม" />
+            <TableColumn fx:id="finishDate" minWidth="4.79998779296875" prefWidth="73.5999755859375" text="วันที่จบ" />
+            <TableColumn fx:id="department" prefWidth="88.79998779296875" text="หน่วยงาน" />
+         </columns>
+      </TableView>
+      <AnchorPane prefHeight="58.0" prefWidth="694.0" style="-fx-background-color: #8F3A845E;">
+         <children>
+            <Label layoutX="21.0" layoutY="14.0" style="-fx-font: #0000;" text="การแจ้งเตือน" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

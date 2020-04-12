@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Manager.SceneListCustomer">
+   <children>
+      <AnchorPane prefHeight="58.0" prefWidth="693.0" style="-fx-background-color: #8F3A845E;">
+         <children>
+            <Label layoutX="21.0" layoutY="14.0" style="-fx-font: #0000;" text="รายชื่อลูกค้า" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableView" layoutY="58.0" onMouseClicked="#clickColumn" prefHeight="358.0" prefWidth="697.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="232.80001527071" text="ผู้ติดต่อ" />
+            <TableColumn fx:id="department" prefWidth="135.20001220703125" text="หน่วยงาน" />
+          <TableColumn fx:id="phone" prefWidth="149.59999084472656" text="เบอร์โทร" />
+            <TableColumn fx:id="email" prefWidth="174.39999999999998" text="อีเมลล์" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="388.0" layoutY="433.0" prefHeight="58.0" prefWidth="286.0">
+         <children>
+            <Button fx:id="buttonOK" layoutX="166.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleOkOnClick" prefHeight="44.0" prefWidth="133.0" text="ตกลง" />
+            <Button fx:id="buttonRegisterCustomer" layoutX="22.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleRegisterCustomerOnClick" prefHeight="44.0" prefWidth="133.0" text="ลงทะเบียนลูกค้าใหม่" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="buttonBack" layoutX="26.0" layoutY="433.0" mnemonicParsing="false" onAction="#handleBackOnClick" prefHeight="44.0" prefWidth="133.0" text="กลับไปหน้าหลัก" />
+      <Label layoutX="186.0" layoutY="430.0" prefHeight="45.0" prefWidth="203.0" text="Label" />
+   </children>
+</AnchorPane>

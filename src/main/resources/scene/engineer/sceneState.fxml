@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SceneState">
+   <children>
+      <TableView fx:id="tableView" layoutY="52.0" prefHeight="453.0" prefWidth="694.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="53.257369101047516" text="ID" />
+          <TableColumn fx:id="employee" minWidth="0.0" prefWidth="97.55381774902344" text="คนรับผิดชอบ" />
+            <TableColumn fx:id="name" prefWidth="86.03579711914062" text="ชื่อโปรเจค" />
+            <TableColumn fx:id="customer" prefWidth="82.96418762207031" text="ลูกค้า" />
+            <TableColumn fx:id="startDate" prefWidth="107.0" text="วันที่เริ่มงาน" />
+            <TableColumn fx:id="finishDate" minWidth="0.0" prefWidth="130.0" text="วันที่ปิดงาน" />
+            <TableColumn fx:id="status" minWidth="9.6983642578125" prefWidth="134.00006103515625" text="สถานะ" />
+        </columns>
+      </TableView>
+      <SplitMenuButton layoutX="123.0" layoutY="11.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="199.0" text="Date">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Significant" />
+          <MenuItem mnemonicParsing="false" text="Finish" />
+        </items>
+      </SplitMenuButton>
+      <Label layoutX="24.0" layoutY="13.0" prefHeight="24.0" prefWidth="106.0" text="Please select :" />
+   </children>
+</AnchorPane>

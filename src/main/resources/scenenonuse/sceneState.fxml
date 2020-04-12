@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nonuse.Scene.SceneState">
+   <children>
+      <TableView fx:id="tableView" layoutY="52.0" prefHeight="453.0" prefWidth="694.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="53.257369101047516" text="ID" />
+          <TableColumn fx:id="name" minWidth="0.0" prefWidth="97.55381774902344" text="Name" />
+            <TableColumn fx:id="detail" prefWidth="86.03579711914062" text="Detail" />
+            <TableColumn fx:id="startDate" prefWidth="82.96418762207031" text="Start Date" />
+            <TableColumn fx:id="finishDate" prefWidth="79.6319580078125" text="Finish Date" />
+            <TableColumn fx:id="status" minWidth="0.0" prefWidth="56.36810302734375" text="Status" />
+            <TableColumn prefWidth="57.8502197265625" text="Status" />
+            <TableColumn fx:id="department" prefWidth="100.37127685546875" text="Department" />
+            <TableColumn fx:id="employeeId" prefWidth="78.22149658203125" text="EmployeeID" />
+        </columns>
+      </TableView>
+      <SplitMenuButton layoutX="123.0" layoutY="11.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="199.0" text="Date">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Significant" />
+          <MenuItem mnemonicParsing="false" text="Finish" />
+        </items>
+      </SplitMenuButton>
+      <Label layoutX="24.0" layoutY="13.0" prefHeight="24.0" prefWidth="106.0" text="Please select :" />
+   </children>
+</AnchorPane>

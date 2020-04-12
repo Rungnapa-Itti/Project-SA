@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Manager.SceneCloseProject">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="92.0" prefWidth="694.0" style="-fx-background-color: #8F3A845E;">
+         <children>
+            <Text layoutX="39.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="รายละเอียดโครงการ" wrappingWidth="343.6925811767578">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="85.0" prefHeight="417.0" prefWidth="694.0">
+         <children>
+            <Label layoutX="28.0" layoutY="89.0" prefHeight="27.0" prefWidth="87.0" text="ชื่อโครงการ" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelId" layoutX="130.0" layoutY="26.0" prefHeight="45.0" prefWidth="540.0" text="Label" />
+            <Label layoutX="28.0" layoutY="35.0" prefHeight="27.0" prefWidth="87.0" text="รหัสโครงการ" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="138.0" prefHeight="27.0" prefWidth="105.0" text="ผู้รับผิดชอบ" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="190.0" prefHeight="37.0" prefWidth="89.0" text="รายละเอียดงาน" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonCloseProject" layoutX="557.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleCloseProjectOnclick" prefHeight="27.0" prefWidth="113.0" text="ปิดงาน" />
+            <Label fx:id="labelProjectName" layoutX="130.0" layoutY="80.0" prefHeight="45.0" prefWidth="540.0" text="Label" />
+            <Label fx:id="labelEmployeeName" layoutX="130.0" layoutY="129.0" prefHeight="45.0" prefWidth="540.0" text="Label" />
+            <Label fx:id="labelDetail" alignment="TOP_LEFT" layoutX="25.0" layoutY="228.0" prefHeight="124.0" prefWidth="648.0" text="Label" />
+            <Button fx:id="buttonEditProject" layoutX="437.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleEditOnClick" prefHeight="27.0" prefWidth="113.0" text="แก้ไขงาน" />
+            <Button fx:id="buttonBack" layoutX="28.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleBackOnClick" prefHeight="27.0" prefWidth="113.0" text="กลับหน้าหลัก" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

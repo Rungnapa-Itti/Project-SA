@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Engineer.SceneWorkNotComplete">
+   <children>
+      <AnchorPane prefHeight="58.0" prefWidth="694.0" style="-fx-background-color: #8F3A845E;">
+         <children>
+            <Label layoutX="21.0" layoutY="14.0" style="-fx-font: #0000;" text="งานที่ยังไม่เสร็จ" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableView" layoutY="58.0" prefHeight="448.0" prefWidth="694.0">
+         <columns>
+            <TableColumn fx:id="status" minWidth="4.79998779296875" prefWidth="62.4000244140625" text="สถานะ" />
+            <TableColumn fx:id="projectId" prefWidth="75.0" text="รหัสโครงการ" />
+            <TableColumn fx:id="projectName" prefWidth="235.20008850097656" text="ชื่อโครงการ" />
+            <TableColumn fx:id="startDate" prefWidth="104.800048828125" text="วันที่เริ่ม" />
+            <TableColumn fx:id="finishDate" prefWidth="87.19989013671875" text="วันที่เสร็จ" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

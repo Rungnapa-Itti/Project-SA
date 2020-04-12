@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SceneLogin">
+   <children>
+      <Pane prefHeight="128.0" prefWidth="700.0">
+         <children>
+            <Label layoutX="256.0" layoutY="37.0" text="LOGO">
+               <font>
+                  <Font size="63.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="128.0" prefHeight="378.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="labelException" layoutX="262.0" layoutY="134.0" prefHeight="17.0" prefWidth="235.0" text="Exception" textFill="#ff1111" />
+            <JFXButton fx:id="jfxButtonForgot" layoutX="255.0" layoutY="218.0" onAction="#handleForgotpassButtonOnClick" text="Do you forgot password ?" textFill="#0b1ef2" />
+            <Button fx:id="buttonRegister" layoutX="403.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleRegisterButtonOnClick" prefHeight="44.0" prefWidth="95.0" text="Register" />
+            <Button fx:id="buttonlLogin" layoutX="262.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleLoginButtonOnClick" prefHeight="44.0" prefWidth="95.0" text="Login" />
+            <TextField fx:id="textFieldPassword" layoutX="262.0" layoutY="95.0" prefHeight="29.0" prefWidth="235.0" promptText="your password" />
+            <Label alignment="BASELINE_RIGHT" layoutX="107.0" layoutY="95.0" prefHeight="29.0" prefWidth="130.0" scaleShape="false" text="Password" />
+            <Label alignment="BASELINE_RIGHT" layoutX="107.0" layoutY="51.0" prefHeight="29.0" prefWidth="130.0" scaleShape="false" text="Username" />
+            <TextField fx:id="textFieldUsername" layoutX="262.0" layoutY="51.0" prefHeight="29.0" prefWidth="235.0" promptText="your username" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
